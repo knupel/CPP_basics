@@ -1,4 +1,4 @@
-## c++ basique
+## C++ basique
 
 Vous trouverez ici les quelques lignes de code que j'écris pour m'aider dans mon exploration du c++. Exploration qui passe par la découverte des variables, des listes, des méthodes, des structures et bien entendu des classes. 
 Cette collection de sketches s’enrichira au fur et à mesure de mon apprentissage.
