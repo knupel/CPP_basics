@@ -22,16 +22,16 @@ Une fois fait ciblez votre dossier dans votre terminal et lancez une commande  `
 
 Vous pourrez ensuite déspoer ce fichier `.a` et votre fichier `.hpp` dans votre dossier de travail. 
 
-Vous pouvez ensuite nettoyer votre dossier de librairie en utilisant la commande `make clean`ou `make fclean
+Vous pouvez ensuite nettoyer votre dossier de librairie en utilisant la commande `make clean`ou `make fclean`
 
 
 ## Make your library
 [library template](https://github.com/StanLepunK/CPP_basics/tree/master/LIBRARY/lib)
 
 You will also find a template to build your own C++ library.
-To do this, edit the `makefile' and replace the `file.hpp' with the desired one, the same goes for the `file.cpp' and `file.a'. 
+To do this, edit the `makefile` and replace the `file.hpp` with the desired one, the same goes for the `file.cpp` and `file.a`. 
 
-Once you have targeted your directory in your terminal and run a `make' command which will generate `file.a'. 
+Once you have targeted your directory in your terminal and run a `make` command which will generate `file.a`. 
 
 You can then unpack this `.a` file and your `.hpp` file into your working directory.
 
