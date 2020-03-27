@@ -6,7 +6,7 @@ Cette collection de sketches s’enrichira au fur et à mesure de mon apprentiss
 J'espère que vous pourrez en profitez si vous aussi vous partez à la découverte de ce merveilleux univers qu'est la C++, né du C.
 
 ## basic C++
-
+[gabarit librairie](https://github.com/StanLepunK/CPP_basics/tree/master/LIBRARY/lib)
 You will find here the few lines of code I write to help me in my exploration of C++. Exploration that involves the discovery of variables, lists, methods, structures and of course classes. 
 This collection of sketches will be enriched as I learn more and more.
 
@@ -14,6 +14,7 @@ I hope that you will be able to take advantage of it if you too discover this wo
 
 
 ## C++ Librairie
+[library template](https://github.com/StanLepunK/CPP_basics/tree/master/LIBRARY/lib)
 Vous trouverez également un gabarit pour réaliser votre librairie C++.
 Pour cela éditer le `makefile` remplacez les `file.hpp`par celui souhaité, de même pour les `file.cpp` et `file.a`. 
 
