@@ -14,6 +14,7 @@ I hope that you will be able to take advantage of it if you too discover this wo
 
 ## Créer votre librairie
 [gabarit librairie](https://github.com/StanLepunK/CPP_basics/tree/master/LIBRARY/lib)
+
 Vous trouverez également un gabarit pour réaliser votre librairie C++.
 Pour cela éditer le `makefile` remplacez les `file.hpp`par celui souhaité, de même pour les `file.cpp` et `file.a`. 
 
