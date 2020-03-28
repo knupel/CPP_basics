@@ -1,4 +1,4 @@
-#pragma once
+// #pragma once
 #include "lib.hpp"
 
 int vec3::instance = 0;
