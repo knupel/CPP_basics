@@ -7,6 +7,12 @@ private:
 	static int instance;
 	T const x;
 	T const y;
+
+	/**
+	* This solution give the possibility to use method operator=
+	*/
+	// T x;
+	// T y;
 public:
 	vec2() : x(0), y(0) {
 		std::cout << "Default constructor" << std::endl;
@@ -33,7 +39,8 @@ public:
 		return;
 	}
 
-	vec2 & operator=(vec2 const & rhs) {
+	vec2 & operator=(vec2<T> const & rhs) {
+		// *this = rhs; // cause a seg fault :(
 		this->x = rhs.get_x();
 		this->y = rhs.get_y();
 		return *this;
@@ -70,6 +77,7 @@ int main() {
 	vec2<bool> d(true, false);
 	vec2<int> e(b);
 
+
 	std::cout << a << std::endl;
 	std::cout << b << std::endl;
 	std::cout << c << std::endl;
@@ -87,6 +95,14 @@ int main() {
 
 	std::cout << "d.get_x(): " << d.get_x() << std::endl;
 	std::cout << "d.get_y(): " << d.get_y() << std::endl;
+
+	std::cout << "e.get_x(): " << e.get_x() << std::endl;
+	std::cout << "e.get_y(): " << e.get_y() << std::endl;
+
+	a = c;
+  printf("a = c\n");
+	std::cout << "a.get_x(): " << a.get_x() << std::endl;
+	std::cout << "a.get_y(): " << a.get_y() << std::endl;
 
 	return (0);
 }
