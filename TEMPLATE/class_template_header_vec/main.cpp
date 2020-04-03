@@ -31,5 +31,10 @@ int main() {
 	std::cout << "e.get_x(): " << e.get_x() << std::endl;
 	std::cout << "e.get_y(): " << e.get_y() << std::endl;
 
+	printf("e = a\n");
+	e = a;
+	std::cout << "e.get_x(): " << e.get_x() << std::endl;
+	std::cout << "e.get_y(): " << e.get_y() << std::endl;
+
 	return (0);
 }

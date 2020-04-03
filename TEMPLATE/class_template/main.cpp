@@ -5,14 +5,8 @@ template <class T>
 class vec2 {
 private:
 	static int instance;
-	T const x;
-	T const y;
-
-	/**
-	* This solution give the possibility to use method operator=
-	*/
-	// T x;
-	// T y;
+	T x;
+	T y;
 public:
 	vec2() : x(0), y(0) {
 		std::cout << "Default constructor" << std::endl;
@@ -27,7 +21,6 @@ public:
 	}
 
 	vec2(vec2<T> const & src) : x(src.get_x()), y(src.get_y()) {
-		// *this = src;
 		std::cout << "Copy constructor" << std::endl;
 		vec2<T>::instance++;
 		return;
@@ -40,7 +33,6 @@ public:
 	}
 
 	vec2 & operator=(vec2<T> const & rhs) {
-		// *this = rhs; // cause a seg fault :(
 		this->x = rhs.get_x();
 		this->y = rhs.get_y();
 		return *this;
