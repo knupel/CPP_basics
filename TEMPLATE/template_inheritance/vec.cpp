@@ -5,7 +5,6 @@ template <class T>
 class vec {
 public:
 	virtual ~vec();
-
 };
 
 

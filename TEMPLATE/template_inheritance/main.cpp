@@ -5,9 +5,11 @@
 
 template <class T>
 void show_data(vec<T> &v) {
+	printf("adress vec v: %p\n", &v);
 	vec2<T> &temp = dynamic_cast<vec2<T>&>(v);
-	std::cout << "v.x(): " << temp.x() << std::endl;
-	std::cout << "v.y(): " << temp.y() << std::endl;
+	printf("adress vec2 temp: %p\n", &temp);
+	std::cout << "temp.x(): " << temp.x() << std::endl;
+	std::cout << "temp.y(): " << temp.y() << std::endl;
 }
 
 

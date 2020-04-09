@@ -21,7 +21,7 @@ public:
 	vec2();
 	vec2(T const &x, T const &y);
 	vec2(vec2<T> const &src);
-	virtual ~vec2();
+	~vec2();
 
 	vec2 & operator=(vec2<T> const &rhs);
 
