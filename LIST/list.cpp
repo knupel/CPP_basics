@@ -1,6 +1,6 @@
 #include <iostream>
 #include <list>
-// http://www.cplusplus.com/reference/vector/vector/
+// http://www.cplusplus.com/reference/list/list/
 
 int main(void) {
 	std::list<float> c_list;

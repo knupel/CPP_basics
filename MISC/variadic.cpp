@@ -2,7 +2,6 @@
 #include <cstdarg>
 #include <string>
 
-
 // https://en.cppreference.com/w/cpp/utility/variadic
 void print_arg(const char* fmt...) {
 	va_list args;
@@ -19,9 +18,6 @@ void print_arg(const char* fmt...) {
 		} else if (*fmt == 'f') {
 			double d = va_arg(args, double);
 			std::cout << d << '\n';
-		} else if (*fmt == 's') {
-			std::string s = va_arg(args, std::string);
-			std::cout << s << '\n';
 		}
 		++fmt;
 	}
@@ -29,8 +25,11 @@ void print_arg(const char* fmt...) {
 }
  
 int main() {
+	// fmt_info describe the sentence of vriatic argument, necessary to chartch it in the method.
 	char *fmt_info = "iiiii";
 	print_arg(fmt_info,0,1,2,3,10,11,12,13);
-	fmt_info = "ccc";
-	print_arg(fmt_info,0,1,'t',3,10,11,12,13);
+	fmt_info = "cc";
+	print_arg(fmt_info,0,1,"truc",3,10,11,12,13);
+	fmt_info = "icff";
+	simple_printf(fmt_info, 3, 'a', 1.999, 42.5); 
 }
