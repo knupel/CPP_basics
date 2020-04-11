@@ -5,6 +5,8 @@
 
 // RECURSION
 /**
+ * Variadic Template Function that accepts variable number
+ * of arguments of any type.
 * https://thispointer.com/c11-variadic-template-function-tutorial-examples/
 */
 // Function that accepts no parameter
@@ -15,10 +17,6 @@ void function_recursive() {
 	std::cout << "out" << std::endl;
 }
  
-/*
- * Variadic Template Function that accepts variable number
- * of arguments of any type.
- */
 template<typename T, typename ... Args>
 void function_recursive(T first, Args ... args) {
 	size_t const length = sizeof...(Args);

@@ -19,9 +19,6 @@ void print_arg(const char* fmt...) {
 		} else if (*fmt == 'f') {
 			double d = va_arg(args, double);
 			std::cout << d << '\n';
-		} else if (*fmt == 's') {
-			std::string s = va_arg(args, std::string);
-			std::cout << s << '\n';
 		}
 		++fmt;
 	}
