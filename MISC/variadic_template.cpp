@@ -34,24 +34,28 @@ void function_recursive(T first, Args ... args) {
 // https://en.cppreference.com/w/cpp/utility/variadic
 template<typename... Ts> 
 void function(Ts... args){
-    const int size = sizeof...(args) + 2;
-    int res[size] = {1,args...,2};
-    // since initializer lists guarantee sequencing, this can be used to
-    // call a function on each element of a pack, in order:
-    size_t const length = sizeof...(Ts);
-    std::cout << "length: " << length << std::endl;
-    // int dummy[length] = { (args, 0)... };
-    char dummy[length] = { (std::cout << args, '0')... };
-    std::cout << "dummy[0]: " << dummy[0] << std::endl;
-    std::cout << "dummy[1]: " << dummy[1] << std::endl;
+  // since initializer lists guarantee sequencing, this can be used to
+  // call a function on each element of a pack, in order:
+  size_t const length = sizeof...(Ts);
+  std::cout << "length: " << length << std::endl;
+  char dummy[length] = { (std::cout << args << " | ", '0')... };
 }
 
+
+template<typename... T> 
+void function_by_ref(T &... args) {
+  // since initializer lists guarantee sequencing, this can be used to
+  // call a function on each element of a pack, in order:
+  size_t const length = sizeof...(T);
+  std::cout << "length: " << length << std::endl;
+  char dummy[length] = { (std::cout << args << " | ", '0')... };
+}
 
 // STORE 
 // Here we use advanced method for the vector list, we need to indicate to the temple a second argumnt, use to iterating the list.
 // https://stackoverflow.com/questions/19094340/stdvector-as-a-template-function-argument
 template<class V, typename A, typename... T>
-void function_store(std::vector<V,A> &list, T... ts) {
+void function_store(std::vector<V,A> &list, T ... ts) {
   list.reserve(sizeof...(ts));
   char dummy[] = { (list.push_back(ts), '0')... }; 
 }
@@ -61,10 +65,19 @@ void function_store(std::vector<V,A> &list, T... ts) {
 
 
 int main() {
+  printf("\nfunction_recursive()\n");
 	function_recursive(2, 3.4, "aaa");
   std::cout << "the end" << std::endl;
-  function(3,2);
+  
+  printf("\nfunction()\n");
+  int a = 3;
+  int b = 2;
+  function(a,b);
 
+  printf("\n\nfunction_by_ref()\n");
+  function_by_ref(a,b);
+
+  printf("\n\nfunction_store()\n");
   std::vector<int> v_list;
   function_store(v_list,1,2,3);
   size_t length = v_list.size();

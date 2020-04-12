@@ -8,7 +8,8 @@
 int main() {
 	double d1 = 12.3;
 	double d2 = 4.5;
-	simple<double>(d1);
+	simple(d1);
+
 	std::vector<double> list;
 	set_list(list,d1,d2);
 	std::cout << "list size: " << list.size() << " content: " << list.at(0) << ", " << list.at(1) << std::endl;

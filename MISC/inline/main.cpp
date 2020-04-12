@@ -1,4 +1,7 @@
 #include <iostream>
+// Note the good stuff with inline you can redefine / overload a function in othe file.cpp
+// that's can be good but you need to carefull to the compilation see exeample below.
+
 
 /**
 first compilation > clang++  -std=c++11 *.cpp && ./a.out

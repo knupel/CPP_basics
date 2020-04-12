@@ -70,4 +70,3 @@ int main() {
 	std::cout << "Child<int>::instance: " <<  Child<int>::instance << std::endl;
 	child.what();
 }
-
