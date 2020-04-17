@@ -2,6 +2,11 @@
 #include <random>
 #include <cmath>
 
+/**
+* Random function to compute few sort or random result.
+* http://www.cplusplus.com/reference/random/uniform_real_distribution/
+*/
+
 float random(float min, float max) {
 	std::random_device seed;
 	std::default_random_engine generator(seed());
