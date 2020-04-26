@@ -1,3 +1,4 @@
+#include "vec2.hpp"
 #include "vec2.cpp"
 #include <iostream>
 
