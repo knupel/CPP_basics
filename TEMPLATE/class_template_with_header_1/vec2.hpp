@@ -1,6 +1,7 @@
 #ifndef VEC2_H
 # define VEC2_H
 
+// https://www.codeproject.com/Articles/48575/How-to-define-a-template-class-in-a-h-file-and-imp
 #include <iostream>
 /**
 * TEMPLATE DECLARATION
@@ -14,8 +15,6 @@ private:
 
 public:
 	vec2();
-	vec2(T const &x, T const &y);
-	vec2(vec2<T> const &src);
 	~vec2();
 
 	vec2 & operator=(vec2<T> const &rhs);
@@ -26,11 +25,4 @@ public:
 	T get_y() const;
 }; 
 
-template <class T>
-std::ostream & operator<<(std::ostream &out, vec2<T> const &rhs);
-
-/**
-* include cpp
-*/
-#include "vec2.cpp"
 #endif
