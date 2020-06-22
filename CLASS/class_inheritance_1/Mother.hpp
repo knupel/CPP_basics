@@ -1,17 +1,17 @@
-#ifndef HEADER_H
-# define HEADER_H
+#ifndef MOTHER_H
+# define MOTHER_H
 
 #include <iostream>
 #include <string>
 
-class Body {
+class Mother {
 	private:
 		float x;
 		float y;
 	public:
-		Body();
-		~Body();
-		Body(float const x, float const y);
+		Mother();
+		~Mother();
+		Mother(float const x, float const y);
 
 		float get_x() const;
 		float get_y() const;
@@ -21,13 +21,13 @@ class Body {
 };
 
 
-class Human : public Body {
+class Child : public Mother {
 	private:
 		std::string name;
 	public:
-		Human();
-		~Human();
-		Human(float const x, float const y, std::string const name);
+		Child();
+		~Child();
+		Child(float const x, float const y, std::string const name);
 
 		std::string get_name() const;
 
