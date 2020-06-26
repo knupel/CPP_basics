@@ -37,3 +37,28 @@ You can then unpack this `.a` file and your `.hpp` file into your working direct
 
 You can then clean your library folder using the `make clean` or `make fclean` command.
 
+
+## À partir de Xcode
+Pour créer un projet C++ avec Xcode
+
+1 > Créer un `new Xcode project`
+
+2 > Sélectionnez `MacOs`
+
+3 > Sélectionnez `Command Line Tool`
+
+4 > Cliquer `Next`
+
+5 > Nommez votre `Product Name`
+
+6 > Nommez votre `Organization Identifier`
+
+Et voilà
+
+###	À noter que si vous souhaitez importer des fichiers depuis des dossiers :
+
+1 > Dans votre dossier `src` faire `add files` dans le menu contextuel ou bien l'ajouter directement.
+
+2 > Puis dans la barre de réglages dans l'onglet `build phase` ajoutez les fichiers nécessaires à votre projet.
+
+
