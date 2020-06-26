@@ -58,7 +58,9 @@ Et voilà
 ###	À noter que si vous souhaitez importer des fichiers depuis des dossiers :
 
 1 > Dans votre dossier `src` faire `add files` dans le menu contextuel ou bien l'ajouter directement.
+![add files](https://raw.githubusercontent.com/StanLepunK/CPP_basics/master/src_img/add_files.jpg)
 
 2 > Puis dans la barre de réglages dans l'onglet `build phase` ajoutez les fichiers nécessaires à votre projet.
+![link files](https://raw.githubusercontent.com/StanLepunK/CPP_basics/master/src_img/build_phase.jpg)
 
 
