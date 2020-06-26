@@ -64,3 +64,27 @@ Et voilà
 ![link files](https://raw.githubusercontent.com/StanLepunK/CPP_basics/master/src_img/build_phase.jpg)
 
 
+## From Xcode
+To create a C++ project with Xcode
+
+1 > Create a `new Xcode project`.
+
+2 > Select `MacOs`.
+
+3 > Select `Command Line Tool`.
+
+4 > Click `Next`.
+
+5 > Name your `Product Name`.
+
+6 > Name your `Organization Identifier`.
+
+### Please note that if you want to import files from :
+
+either
+
+1 > in your `src` folder do `add files` in the context menu.
+
+2 > then in the settings bar in the `build phase` tab add the necessary files to your project.
+
+
