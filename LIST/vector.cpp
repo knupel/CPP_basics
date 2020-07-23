@@ -36,6 +36,12 @@ int main(void) {
 	container_vector.pop_back();
 	std::cout << "use back() to show last element:"  << container_vector.back() << std::endl;
 
+		// erase
+	std::cout << "erase first element"  << std::endl;
+	std::cout << "container_vector.size() " << container_vector.size() << std::endl;
+	container_vector.erase(container_vector.begin() +1); // cannot acces directly to erase method... for an obscur reason...
+	std::cout << "container_vector.size() " << container_vector.size() << std::endl;
+
 	// read list
 	std::cout << "read list by simple access with loop for(:)"  << std::endl;
 	for(float elem : container_vector) {
@@ -54,5 +60,8 @@ int main(void) {
 	for(float elem : container_vector) {
 		std::cout << "elem: " << elem << std::endl;
 	}
-	return (0);
+
+
+
+
 }

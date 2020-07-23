@@ -12,7 +12,10 @@ public:
 
 	Vec2 & operator=(Vec2 const & rhs); 	// canonical
 
+	// INFO
 	static int get_instance();
+	static void warning(bool is);
+	static bool warning();
 
 	float get_x() const ;
 	float get_y() const ;
@@ -20,6 +23,7 @@ public:
 
 private:
 	static int instance;
+	static bool _warning;
 	float x;
 	float y;
 }; 
