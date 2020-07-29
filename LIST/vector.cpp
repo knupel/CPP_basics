@@ -60,8 +60,4 @@ int main(void) {
 	for(float elem : container_vector) {
 		std::cout << "elem: " << elem << std::endl;
 	}
-
-
-
-
 }
