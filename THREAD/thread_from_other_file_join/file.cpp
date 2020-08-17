@@ -9,10 +9,10 @@ MyClass::MyClass(){
 
 MyClass::~MyClass() {
 	stop_thread = true;
-  if(the_thread->joinable()) {
-  	the_thread->join();
-  }
-  std::cout << "MyClass: Destructor" << std::endl;
+	if(the_thread->joinable()) {
+		the_thread->join();
+	}
+	std::cout << "MyClass: Destructor" << std::endl;
 	return;
 }
 
