@@ -18,8 +18,11 @@ int main() {
 	std::map<std::string, int> list = { 
 		{ "A", 10 }, 
 		{ "B", 42 },
-		{ "C", 62 }, 
-		{ "D", 13 } 
+		{ "C", 62 },
+		{ "D", 42 },
+		{ "E", 42 }, 
+		{ "F", 42 },  
+		{ "G", 13 } 
 	};
 
 	// create an empty vector of pairs
